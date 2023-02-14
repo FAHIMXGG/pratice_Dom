@@ -1,11 +1,13 @@
-const textElement = document.querySelector('.text');
+const textElement = document.querySelector('#textarea');
 
 
 // document.getElementById('color').addEventListener('click', function() {
 //     document.querySelector('.text').style.color = 'green';
 // })
 
-const colorButton = document.getElementById('color');
+// const colorButton = document.getElementById('color');
+
+
 // colorButton.addEventListener('click', function(){
 //     if (textElement.style.color === 'green') {
 //         textElement.style.color = '';
@@ -14,16 +16,22 @@ const colorButton = document.getElementById('color');
 //         textElement.style.color = 'green';
 //     }
 // })
-const colors = ['red', 'green', 'blue', 'orange'];
-let currentColorIndex = 0;
 
-colorButton.addEventListener('click', function(){
-    if (currentColorIndex >= colors.length) {
-        currentColorIndex = 0;
-    }
-    textElement.style.color = colors[currentColorIndex];
-    currentColorIndex++;
-});
+
+// const colors = ['red', 'green', 'blue', 'orange'];
+// let currentColorIndex = 0;
+
+// colorButton.addEventListener('click', function(){
+//     if (currentColorIndex >= colors.length) {
+//         currentColorIndex = 0;
+//     }
+//     textElement.style.color = colors[currentColorIndex];
+//     currentColorIndex++;
+// });
+
+
+
+
 
 // document.getElementById('font-size').addEventListener('click', function(){
 //     document.querySelector('.text').style.fontSize = 'x-large';
@@ -77,3 +85,15 @@ centerButton.addEventListener('click', function(){
         textElement.style.textAlign = "center";
     }
 });
+
+
+////////////////color/////////////////////////
+let colorInput = document.querySelector('#color');
+let hexInput = document.querySelector('#textarea');
+
+colorInput.addEventListener('input', () => {
+    let color = colorInput.value;
+    // hexInput.value = color;
+    document.querySelector('#textarea').style.color = color;
+
+})

@@ -86,7 +86,20 @@ document.getElementById('submit').addEventListener('click', function (){
     }
     
 else{
+    const amountMoney = document.getElementById('price');
+    //console.log(amountMoney);
+    const amountMoneyString = amountMoney.innerText;
+    //console.log(amountMoneyString);
+    const amount = parseFloat(amountMoneyString);
+    //console.log(amount);
+
+
+    const discount = document.getElementById('total');
+
+    const total = amount * 1;
+    discount.innerText = total;
     alert('Wrong Coupon')
+    
 }
 
 })
