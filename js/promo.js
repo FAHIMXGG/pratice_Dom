@@ -2,36 +2,40 @@
 
 document.getElementById('p1').addEventListener('click', function(){
     const textArea = document.getElementById('product1');
-    const product1 = document.getElementById('p1');
-    const product1InnerText = product1.innerText;
+    const product1 = document.getElementById('p11');
+    const product1InnerText = product1.value;
     //console.log(product1InnerText);
-    textArea.innerText = product1InnerText;
+    const totalProduct1= product1InnerText * 100;
+    textArea.innerText = totalProduct1;
 })
 document.getElementById('p2').addEventListener('click', function(){
     const textArea = document.getElementById('product2');
-    const product1 = document.getElementById('p2');
-    const product1InnerText = product1.innerText;
+    const product2 = document.getElementById('p12');
+    const product2InnerText = product2.value;
     //console.log(product1InnerText);
-    textArea.innerText = product1InnerText;
+    const totalProduct2= product2InnerText * 150;
+    textArea.innerText = totalProduct2;
 })
 document.getElementById('p3').addEventListener('click', function(){
     const textArea = document.getElementById('product3');
-    const product1 = document.getElementById('p3');
-    const product1InnerText = product1.innerText;
+    const product3 = document.getElementById('p13');
+    const product3InnerText = product3.value;
+    const totalProduct3= product3InnerText * 80;
     //console.log(product1InnerText);
-    textArea.innerText = product1InnerText;
+    textArea.innerText = totalProduct3;
 })
 document.getElementById('p4').addEventListener('click', function(){
     const textArea = document.getElementById('product4');
-    const product1 = document.getElementById('p4');
-    const product1InnerText = product1.innerText;
+    const product4 = document.getElementById('p14');
+    const product4InnerText = product4.value;
+    const totalProduct4= product4InnerText * 50;
     //console.log(product1InnerText);
-    textArea.innerText = product1InnerText;
+    textArea.innerText = totalProduct4;
 })
 
 document.getElementById('calculate').addEventListener('click', function (){
 
-    const result = document.getElementById('result')
+    const result = document.getElementById('price')
 
     const productOne = document.getElementById('product1')
     const productOneString = productOne.innerText
@@ -55,7 +59,7 @@ const calculationNum = parseFloat(calculation);
 
 //console.log(calculationNum);
 
-    result.innerText = calculation;
+price.innerText = calculation;
     //console.log(productOneNum);
 
 })
