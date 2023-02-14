@@ -1,6 +1,8 @@
 
 
 document.getElementById('p1').addEventListener('click', function(){
+    const hiddenText = document.getElementById('p1-info');
+    hiddenText.style.display = 'block';
     const textArea = document.getElementById('product1');
     const product1 = document.getElementById('p11');
     const product1InnerText = product1.value;
@@ -9,6 +11,8 @@ document.getElementById('p1').addEventListener('click', function(){
     textArea.innerText = totalProduct1;
 })
 document.getElementById('p2').addEventListener('click', function(){
+    const hiddenText = document.getElementById('p2-info');
+    hiddenText.style.display = 'block';
     const textArea = document.getElementById('product2');
     const product2 = document.getElementById('p12');
     const product2InnerText = product2.value;
@@ -17,6 +21,8 @@ document.getElementById('p2').addEventListener('click', function(){
     textArea.innerText = totalProduct2;
 })
 document.getElementById('p3').addEventListener('click', function(){
+    const hiddenText = document.getElementById('p3-info');
+    hiddenText.style.display = 'block';
     const textArea = document.getElementById('product3');
     const product3 = document.getElementById('p13');
     const product3InnerText = product3.value;
@@ -25,6 +31,8 @@ document.getElementById('p3').addEventListener('click', function(){
     textArea.innerText = totalProduct3;
 })
 document.getElementById('p4').addEventListener('click', function(){
+    const hiddenText = document.getElementById('p4-info');
+    hiddenText.style.display = 'block';
     const textArea = document.getElementById('product4');
     const product4 = document.getElementById('p14');
     const product4InnerText = product4.value;

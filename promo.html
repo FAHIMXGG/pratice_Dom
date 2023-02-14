@@ -7,35 +7,43 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1 class="text-2xl font-bold text-center">Promo ADV</h1>
+<body class="bg-cyan-900">
+    <h1 class="text-2xl font-bold text-center mt-10 text-white">Simple Shopping Bulk</h1>
     <section class="text-center mt-32">
-        <div class="flex gap-6 justify-center">
-            <div class="w-2/12 bg-slate-400 rounded">
+        <div class="flex flex-col gap-6 justify-center items-center lg:flex-row">
+            <div class="w-5/6 lg:w-2/12 bg-slate-400 rounded">
                 <img src="./img/1645866342637.png" alt="">
                 <div class="bg-slate-600 pt-2 rounded">
-                    <input id="p11" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100"> <br> 
+                    <h1 class="text-white font-medium mb-2">Samsung Ear Buds</h1>
+                    <h1 class="text-gray-200 font-medium mb-3">Price 100$</h1>
+                    <input id="p11" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100" value="1"> <br> 
                     <button id="p1" class="bg-slate-800 text-white p-2 rounded mt-3 mb-3 w-3/12 hover:text-cyan-300 hover:bg-black">Add</button>
                 </div>
             </div>
-            <div class="w-2/12 bg-slate-400 rounded">
-                <img src="./img/1645866342637.png" alt="">
+            <div class="w-5/6 lg:w-2/12 bg-slate-400 rounded">
+                <img src="./img/realme.png" alt="">
                 <div class="bg-slate-600 pt-2 rounded">
-                    <input id="p12" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100"> <br> 
+                    <h1 class="text-white font-medium mb-2">Realme Ear Buds</h1>
+                    <h1 class="text-gray-200 font-medium mb-3">Price 150$</h1>
+                    <input id="p12" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100" value="1"> <br> 
                     <button id="p2" class="bg-slate-800 text-white p-2 rounded mt-3 mb-3 w-3/12 hover:text-cyan-300 hover:bg-black">Add</button>
                 </div>
             </div>
-            <div class="w-2/12 bg-slate-400 rounded">
-                <img src="./img/1645866342637.png" alt="">
+            <div class="w-5/6 lg:w-2/12 bg-slate-400 rounded">
+                <img src="./img/nois.png" alt="">
                 <div class="bg-slate-600 pt-2 rounded">
-                    <input id="p13" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100"> <br> 
+                    <h1 class="text-white font-medium mb-2">Nois Ear Buds</h1>
+                    <h1 class="text-gray-200 font-medium mb-3">Price 80$</h1>
+                    <input id="p13" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100" value="1"> <br> 
                     <button id="p3" class="bg-slate-800 text-white p-2 rounded mt-3 mb-3 w-3/12 hover:text-cyan-300 hover:bg-black">Add</button>
                 </div>
             </div>
-            <div class="w-2/12 bg-slate-400 rounded">
-                <img src="./img/1645866342637.png" alt="">
+            <div class="w-5/6 lg:w-2/12 bg-slate-400 rounded">
+                <img src="./img/OnePlus-Buds-Pro.png" alt="">
                 <div class="bg-slate-600 pt-2 rounded">
-                    <input id="p14" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100"> <br> 
+                    <h1 class="text-white font-medium mb-2">One Plus Ear Buds</h1>
+                    <h1 class="text-gray-200 font-medium mb-3">Price 50$</h1>
+                    <input id="p14" class="border-2 w-4/12" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100" value="1"> <br> 
                     <button id="p4" class="bg-slate-800 text-white p-2 rounded mt-3 mb-3 w-3/12 hover:text-cyan-300 hover:bg-black">Add</button>
                 </div>
             </div>
@@ -44,28 +52,32 @@
             <input id="p13" class="border-2" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100"> <br> <button id="p3">Add</button> <br>
             <input id="p14" class="border-2" type="number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="Enter Quantity" min="1" max="100"> <br> <button id="p4">Add</button> -->
         </div>
+
+
+       
+    </section>
+
+
+    <section class="text-center mt-24 mb-24">
+
+        <h1 class="font-medium text-3xl mb-14">Your Shopping List</h1>
+
         <div>
-            
-        </div>
-        <div>
-            <h1>product 1 total: <span id="product1">0</span></h1>
-            <h1>product 2 total: <span id="product2">0</span></h1>
-            <h1>product 3 total: <span id="product3">0</span></h1>
-            <h1>product 4 total: <span id="product4">0</span></h1>
+            <h1 id="p1-info" style="display:none" class="font-medium text-lg text-orange-500">Samsung Ear Buds total: <span id="product1">0</span>$</h1>
+            <h1 id="p2-info" style="display:none" class="font-medium text-lg text-orange-500">Realme Ear Bud total: <span id="product2">0</span>$</h1>
+            <h1 id="p3-info" style="display:none" class="font-medium text-lg text-orange-500">Nois Ear Buds total: <span id="product3">0</span>$</h1>
+            <h1 id="p4-info" style="display:none" class="font-medium text-lg text-orange-500">One Plus Ear Buds total: <span id="product4">0</span>$</h1>
             
             <br>
-            <button id="calculate">calculate</button>
+            <button class="bg-slate-800 text-white p-2 rounded mt-3 mb-3 lg:w-1/12 hover:text-cyan-300 hover:bg-black" id="calculate">calculate</button>
         </div>
         <div>
-            <h1 >result <span id="price"></span></h1>
+            <h1 class="font-medium text-lg" >Total <span id="price"></span>$</h1>
             <input id="input" type="text" class="mt-2 border-2 border-cyan-200 rounded"> <br>
         <button id="submit" class="bg-slate-400 rounded p-2 mb-2 mt-2">Apply</button>
-        <h1>Total Price After Discount:<span class="font-bold text-cyan-500" id="total"></span></h1>
-        <h1 class="font-bold">Coupon: GG10% GG20% GG05% SAM100%</h1>
+        <h1 class="font-medium text-lg text-yellow-100">Total Price After Discount:<span class="font-bold text-red-400" id="total"></span>$</h1>
+        <h1 class="font-bold text-emerald-400">Coupon: GG10% GG20% GG05% SAM100%</h1>
         </div>
-    </section>
-    <section>
-        
     </section>
 
     <script src="./js/promo.js"></script>
